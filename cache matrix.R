@@ -1,3 +1,7 @@
+# Function that set the matrix and the inverse in an environment
+# X is an invertible matrix
+# Pass the result of a makeCacheMatrix call to cacheSolve 
+
 makeCacheMatrix <- function(x = matrix()) 
   {
   inv <- NULL
@@ -12,6 +16,11 @@ makeCacheMatrix <- function(x = matrix())
        setinverse = setinverse,
        getinverse = getinverse)
 }
+
+# Compute and cache the inverse of a matrix
+# x is the result of a previous makeCacheMatrix call
+# (...) is used as additional arguments to pass to solve function
+
 cacheSolve <- function(x, ...) 
   {
   inv <- x$getinverse()
