@@ -1,2 +1,1 @@
-# datasciencecoursera
-Peer graded assgn
+# data_science
